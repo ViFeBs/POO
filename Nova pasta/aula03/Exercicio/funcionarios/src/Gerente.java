@@ -1,4 +1,4 @@
-public class Gerente extends Auntenticado{
+public class Gerente extends Funcionario implements Autenticavel{
     private String area;
     private double bonus;
 
@@ -32,5 +32,11 @@ public class Gerente extends Auntenticado{
     @Override
     public double calcularSalario() {
         return this.getSalario() + bonus;
+    }
+
+
+    @Override
+    public void fazerLogin() {
+        System.out.println("Logando....");      
     }    
 }
