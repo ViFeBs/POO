@@ -1,4 +1,4 @@
-public final class Presidente extends Funcionario{
+public final class Presidente extends Autenticado{
     private double valorDaContaDeAcoes;
 
     public Presidente(int codigo, String nome) {
