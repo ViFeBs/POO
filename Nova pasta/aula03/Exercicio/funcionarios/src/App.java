@@ -26,5 +26,9 @@ public class App {
        System.out.println(func3.getNome());
 
        System.out.println(folha.getSalarioTotal());
+
+       folha.logar(func2);
+       folha.logar(func3);
+       folha.logar(new Auditor());
     }
 }
